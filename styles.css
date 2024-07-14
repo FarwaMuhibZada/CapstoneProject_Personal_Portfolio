@@ -99,20 +99,29 @@ li {
   color: #85b4ff;
 }
 
+.borders {
+  border-bottom: 2px solid #85b4ff;
+  color: #85b4ff;
+}
+
 @media(max-width: 768px) {
   .humburger {
     display: block;
   }
+
   .humburger.active .bar:nth-child(2) {
     display: block;
     opacity: 0;
   }
+
   .humburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .humburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .nav-menu {
     position: fixed;
     left: -100%;
