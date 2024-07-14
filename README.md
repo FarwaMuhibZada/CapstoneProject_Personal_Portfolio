@@ -99,7 +99,7 @@ cd>CapstoneProject_Personal_Portfolio
 
 ## Contributing 🤝
 ## Design Idea By : Parwana Sanaie👩‍💻
-- LinkedIn: [(https://www.linkedin.com/in/farwa-muhibzada/)]
+- LinkedIn: [(https://www.linkedin.com/in/farwamohibzada/)]
 - Email: [(farwafarid2017@gmail.com)]
 
 For contribution you can create a pull request and mention me there.Thank you.
