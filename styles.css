@@ -41,6 +41,9 @@ span {
 li {
   list-style: none;
 }
+i {
+  padding: 5px;
+}
 
 .navbar {
   min-height: 50px;
