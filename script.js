@@ -51,5 +51,5 @@ aboutContent.innerHTML = `
       </ul>
  </div>
   <div class="about-img">
-  ${skills.certification.map((certificate) =>`<a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt= "certificatepicture"></a>`)},
-</div>`; 
+  ${skills.certification.map((certificate) => `<a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt= "certificatepicture"></a>`)},
+</div>`;
