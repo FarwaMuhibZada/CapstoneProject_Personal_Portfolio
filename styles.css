@@ -41,6 +41,7 @@ span {
 li {
   list-style: none;
 }
+
 i {
   padding: 5px;
 }
@@ -69,7 +70,7 @@ i {
 }
 
 .nav-link {
-  columns: #ccc;
+  color: #ccc;
   font-size: 17px;
   font-weight: 500;
   transition: 0.7s ease;
@@ -175,8 +176,6 @@ section {
   justify-content: center;
 }
 
-
-
 .btn {
   display: inline-block;
   padding: 12px;
@@ -255,7 +254,7 @@ section {
 }
 
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .humburger {
     display: block;
   }
@@ -312,11 +311,9 @@ section {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
   .about-img {
     flex-wrap: wrap;
     justify-content: center;
   }
-
 }
-
-
