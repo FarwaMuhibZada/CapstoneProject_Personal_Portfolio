@@ -160,7 +160,7 @@ section {
   font-weight: 700;
   color: #fff;
   line-height: 1.1;
-  margin: 8 8 8px;
+  margin: 8px 8px 8px;
 }
 
 .home-text h3 {
@@ -253,7 +253,6 @@ section {
   color: #00a6ff;
 }
 
-
 @media (max-width: 768px) {
   .humburger {
     display: block;
@@ -291,6 +290,7 @@ section {
   .nav-menu.active {
     left: 0;
   }
+  
   .home-text h1 {
     font-size: 1rem;
     font-weight: 600;
