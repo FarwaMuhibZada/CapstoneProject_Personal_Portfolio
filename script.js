@@ -51,7 +51,7 @@ aboutContent.innerHTML = `
       </ul>
  </div>
   <div class="about-img">
-  ${skills.certification.map((certificate) => `<a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt='certificatepicture'></a>`).join("")}
+  ${skills.certification.map((certificate) => `<a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt='certificatepicture'></a>`).join('')}
 </div>`;
 
 // project section contents
@@ -135,7 +135,7 @@ const projects = [
   },
   {
     title: 'tribute-page',
-    shortDes: `The tribute page structure requires a main section labeled "main" to encompass all content. `,
+    shortDes: 'The tribute page structure requires a main section labeled "main" to encompass all content. ',
     longDes: `
     The tribute page structure requires a main section labeled "main" to encompass all content.
     It includes a title section ("title") with descriptive text about the subject. Within an element identified as "img-div" (either figure or div):
@@ -162,8 +162,8 @@ const showModal = (index) => {
     <div class="modal-footer">
       <a href="${project.sourceLink}">Sourcecode</a>
       <a href="${project.liveLink}">Livelink</a>
-    </div>`  
-  projectModal.classList.remove('hidden')
+    </div>`;
+  projectModal.classList.remove('hidden');
 };
 
 projectContent.innerHTML = projects.map(
@@ -180,44 +180,42 @@ projectContent.innerHTML = projects.map(
     </ul>
     </p>
     <button class="btn" onclick="showModal(${index})">See More</button>
-  </div>`
-).join("");
-
+  </div>`,
+).join('');
 
 closeModal.addEventListener('click', function() {
-  projectModal.classList.add('hidden');
+  projectModal.classList.add ('hidden');
 });
 
 window.addEventListener('click', function(event) {
   var modal = document.getElementById('myModal');
   if (event.target == modal) {
-    projectModal.classList.add('hidden');
+    projectModal.classList.add ('hidden');
   }
 });
 
-// modal end 
+// modal end
 
 // contact form validation
 const contactForm = document.getElementById('form');
 const errorMsg = document.getElementById('error-msg');
 
-contactForm.addEventListener('submit',(event)=>{
+contactForm.addEventListener('submit', (event) => {
   const email = document.getElementById('email').value;
-  if(email !== email.toLowerCase()) {
+  if (email !== email.toLowerCase()) {
     event.preventDefault();
     errorMsg.classList.remove('hidden');
-
   } else {
-    errorMsg.classList.add('hidden')
+    errorMsg.classList.add('hidden');
   }
 });
 
 const formFields = ['name', 'email', 'message'];
 
-formFields.forEach((feild)=>{
+formFields.forEach((feild) => {
   const input = document.getElementById(feild);
   input.value = localStorage.getItem(feild) || '';
-  input.addEventListener('input',()=>{
+  input.addEventListener('input', () => {
     localStorage.setItem(feild, input.value);
   });
 });
