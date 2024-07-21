@@ -1,3 +1,4 @@
+// Hamburger menu
 const humburger = document.querySelector('.humburger');
 const navMenu = document.querySelector('.nav-menu');
 const navlinkEls = document.querySelectorAll('.nav-link');
@@ -18,49 +19,47 @@ navlinkEls.forEach((navlinkEl) => {
   });
 });
 
-// about section content
+// About section content
 const aboutContent = document.getElementById('about');
 const skills = {
-  description: `Hello! Im Farwa Muhibzada, a passionate web developer with a year of hands-on experience in the field.
-   My journey into web development began during my studies in Computer Science, where I completed two years of coursework that laid a strong foundation in programming and problem-solving. Currently, I am dedicated to advancing my skills further through a rigorous Full Stack Software Development program at Kickstart to Software Development. This intensive training has equipped me with in-depth knowledge of front-end and technologies, including HTML,CSS,JavaScript. 
-  I thrive on challenges and enjoy turning complex ideas into streamlined
-  solutions that enhance user experience and efficiency.`,
-  tools: ['TimeManagment', 'github', 'git', 'CodeReviwer'],
+  description: `Hello! I'm Farwa Muhibzada, a passionate web developer with a year of hands-on experience in the field.
+  My journey into web development began during my studies in Computer Science, where I completed two years of coursework that laid a strong foundation in programming and problem-solving. Currently, I am dedicated to advancing my skills further through a rigorous Full Stack Software Development program at Kickstart to Software Development. This intensive training has equipped me with in-depth knowledge of front-end and technologies, including HTML, CSS, JavaScript. 
+  I thrive on challenges and enjoy turning complex ideas into streamlined solutions that enhance user experience and efficiency.`,
+  tools: ['TimeManagement', 'GitHub', 'Git', 'CodeReviewer'],
   language: ['HTML', 'CSS', 'JavaScript'],
   certification: [
-    { name: 'Responsive Web Design(HTML,CSS)', img: './asset/certificate_js.png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/responsive-web-design' },
-    { name: 'Javascript Algorithm & DataStructure', img: './asset/Screenshot (807).png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/javascript-algorithms-and-data-structures-v8' },
+    { name: 'JavaScript Algorithm & Data Structure', img: './asset/certificate_js.png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/responsive-web-design' },
+    { name: 'Responsive Web Design (HTML, CSS)', img: './asset/Screenshot (807).png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/javascript-algorithms-and-data-structures-v8' },
   ],
 };
 
 aboutContent.innerHTML = `
- <div class="about-text">
+  <div class="about-text">
     <h2>About <span>Me</span></h2>
     <h4>Web Developer</h4>
-      <p>
-        ${skills.description}
-      </p>
-      <br>
-      <ul>
-        <li>
-          <span>skills: </span>${skills.tools.join(', ')}</span>
-        <li>
-        <li>
-          <span>Languages: </span>${skills.language.join(', ')}</span>
-        <li>
-      </ul>
- </div>
+    <p>${skills.description}</p>
+    <br>
+    <ul>
+      <li><span>Skills: </span>${skills.tools.join(', ')}</li>
+      <li><span>Languages: </span>${skills.language.join(', ')}</li>
+    </ul>
+  </div>
   <div class="about-img">
-  ${skills.certification.map((certificate) => `<h2>${certificate.name}</h2><br><a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt='certificatepicture'></a>`).join('')}
-</div>`;
+    ${skills.certification.map((certificate) => `
+      <h2>${certificate.name}</h2>
+      <br>
+      <a href='${certificate.link}' target="_blank">
+        <img src='${certificate.img}' alt='certificate picture'>
+      </a>`).join('')}
+  </div>
+`;
 
-// project section contents
-
+// Project section contents
 const projectContent = document.getElementById('project-content');
 const projectModal = document.getElementById('myModal');
 const modalContent = document.getElementById('modal-content');
 
-// project Data
+// Project data
 const projects = [
   {
     title: 'RomanConverter',
@@ -109,9 +108,9 @@ const projects = [
   {
     title: 'PokemonSearchApp',
     shortDes: 'A web application for searching Pokémon details by name or ID using the PokéAPI',
-    longDes: `
-
-  
+    longDes: `A web application for searching Pokémon details by name or ID using the PokéAPI Proxy provided by freeCodeCamp.
+    Search: Enter a Pokémon name or ID to retrieve detailed information.
+    Display: Show Pokémon name, ID, weight, height, types, and stats (HP, Attack, Defense, Special Attack, Special Defense, Speed).
     `,
     img: './asset/pakindrom.png',
     technology: ['HTML', 'CSS', 'Javascript'],
@@ -151,43 +150,50 @@ const projects = [
 const showModal = (index) => {
   const project = projects[index];
   modalContent.innerHTML = `
-   <button id="close" onclick="closeModals()">&times;</button>
+    <button id="close">&times;</button>
     <div class="modal-header">
       <h2>${project.title}</h2>
     </div>
     <div class="modal-body">
       <img src="${project.img}" alt="Image">
-    <p>${project.longDes}
+      <p>${project.longDes}</p>
     </div>
     <div class="modal-footer">
-      <a href="${project.sourceLink}">Sourcecode</a>
-      <a href="${project.liveLink}">Livelink</a>
+      <a href="${project.sourceLink}">Source Code</a>
+      <a href="${project.liveLink}">Live Link</a>
     </div>`;
   projectModal.classList.remove('hidden');
+
+  // Attach event listener to close button inside modal
+  document.getElementById('close').addEventListener('click', closeModals);
 };
 
 const closeModals = () => {
   projectModal.classList.add('hidden');
 };
 
-projectContent.innerHTML += projects.map(
-  (project, index) => `
-    <div class="box">
-      <div class="s-img">
-        <img  src="${project.img}">
-      </div>
-      <h3>${project.title}</h3>
-      <p>
-        ${project.shortDes}
-      <ul class="langs">
-        <li class="lang-item">${project.technology.join(' /')}</li>
-      </ul>
-      </p>
-      <button class="btn" onclick="showModal(${index})">See More</button>
-    </div>`,
-).join('');
+projectContent.innerHTML = projects.map((project, index) => `
+  <div class="box">
+    <div class="s-img">
+      <img src="${project.img}">
+    </div>
+    <h3>${project.title}</h3>
+    <p>${project.shortDes}</p>
+    <ul class="langs">
+      <li class="lang-item">${project.technology.join(' / ')}</li>
+    </ul>
+    <button class="btn" data-index="${index}">See More</button>
+  </div>`).join('');
 
-// contact form validation
+// Attach event listeners to dynamically created buttons
+document.querySelectorAll('.btn').forEach((button) => {
+  button.addEventListener('click', () => {
+    const index = button.getAttribute('data-index');
+    showModal(index);
+  });
+});
+
+// Contact form validation
 const contactForm = document.getElementById('form');
 const errorMsg = document.getElementById('error-msg');
 
@@ -200,12 +206,13 @@ contactForm.addEventListener('submit', (event) => {
     errorMsg.classList.add('hidden');
   }
 });
+
 const formFields = ['name', 'email', 'message'];
 
-formFields.forEach((feild) => {
-  const input = document.getElementById(feild);
-  input.value = localStorage.getItem(feild) || '';
+formFields.forEach((field) => {
+  const input = document.getElementById(field);
+  input.value = localStorage.getItem(field) || '';
   input.addEventListener('input', () => {
-    localStorage.setItem(feild, input.value);
+    localStorage.setItem(field, input.value);
   });
 });
