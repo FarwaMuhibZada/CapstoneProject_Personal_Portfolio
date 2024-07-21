@@ -148,6 +148,28 @@ const projects = [
 
 ];
 
+const showModal = (index) => {
+  const project = projects[index];
+  modalContent.innerHTML = `
+   <button id="close" onclick="closeModals()">&times;</button>
+    <div class="modal-header">
+      <h2>${project.title}</h2>
+    </div>
+    <div class="modal-body">
+      <img src="${project.img}" alt="Image">
+    <p>${project.longDes}
+    </div>
+    <div class="modal-footer">
+      <a href="${project.sourceLink}">Sourcecode</a>
+      <a href="${project.liveLink}">Livelink</a>
+    </div>`;
+  projectModal.classList.remove('hidden');
+};
+
+const closeModals = () => {
+  projectModal.classList.add('hidden');
+};
+
 projectContent.innerHTML += projects.map(
   (project, index) => `
     <div class="box">
@@ -187,24 +209,3 @@ formFields.forEach((feild) => {
     localStorage.setItem(feild, input.value);
   });
 });
-const showModal = (index) => {
-  const project = projects[index];
-  modalContent.innerHTML = `
-   <button id="close" onclick="closeModals()">&times;</button>
-    <div class="modal-header">
-      <h2>${project.title}</h2>
-    </div>
-    <div class="modal-body">
-      <img src="${project.img}" alt="Image">
-    <p>${project.longDes}
-    </div>
-    <div class="modal-footer">
-      <a href="${project.sourceLink}">Sourcecode</a>
-      <a href="${project.liveLink}">Livelink</a>
-    </div>`;
-  projectModal.classList.remove('hidden');
-};
-
-const closeModals = () => {
-  projectModal.classList.add('hidden');
-};
