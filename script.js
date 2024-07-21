@@ -28,8 +28,8 @@ const skills = {
   tools: ['TimeManagment', 'github', 'git', 'CodeReviwer'],
   language: ['HTML', 'CSS', 'JavaScript'],
   certification: [
-    { img: './asset/certificate_js.png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/responsive-web-design' },
-    { img: './asset/Screenshot (807).png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/javascript-algorithms-and-data-structures-v8' },
+    { name:'Responsive Web Design(HTML,CSS)', img: './asset/certificate_js.png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/responsive-web-design' },
+    { name:'Javascript Algorithm & DataStructure', img: './asset/Screenshot (807).png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/javascript-algorithms-and-data-structures-v8' },
   ],
 };
 
@@ -43,15 +43,15 @@ aboutContent.innerHTML = `
       <br>
       <ul>
         <li>
-          <span>skills<i class="fa-solid fa-briefcase"></i></span>${skills.tools.join(', ')}</span>
+          <span>skills: </span>${skills.tools.join(', ')}</span>
         <li>
         <li>
-          <span>Languages<i class="fa-solid fa-code"></i></span>${skills.language.join(', ')}</span>
+          <span>Languages: </span>${skills.language.join(', ')}</span>
         <li>
       </ul>
  </div>
   <div class="about-img">
-  ${skills.certification.map((certificate) => `<a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt='certificatepicture'></a>`).join('')}
+  ${skills.certification.map((certificate) => `<h2>${certificate.name}</h2><br><a href='${certificate.link}' target="_blank"><img src='${certificate.img}' alt='certificatepicture'></a>`).join('')}
 </div>`;
 
 // project section contents
@@ -149,9 +149,27 @@ const projects = [
 
 ];
 
+projectContent.innerHTML += projects.map(
+    (project, index) => `
+    <div class="box">
+      <div class="s-img">
+        <img  src="${project.img}">
+      </div>
+      <h3>${project.title}</h3>
+      <p>
+        ${project.shortDes}
+      <ul class="langs">
+        <li class="lang-item">${project.technology.join(' /')}</li>
+      </ul>
+      </p>
+      <button class="btn" onclick="showModal(${index})">See More</button>
+    </div>`,
+  ).join('');
+
 const showModal = (index) => {
   const project = projects[index];
   modalContent.innerHTML = `
+   <button id="close" onclick="closeModals(${index})">&times;</button>
     <div class="modal-header">
       <h2>${project.title}</h2>
     </div>
@@ -166,35 +184,20 @@ const showModal = (index) => {
   projectModal.classList.remove('hidden');
 };
 
-projectContent.innerHTML = projects.map(
-  (project, index) => `
-  <div class="box">
-    <div class="s-img">
-      <img  src="${project.img}">
-    </div>
-    <h3>${project.title}</h3>
-    <p>
-      ${project.shortDes}
-    <ul class="langs">
-      <li class="lang-item">${project.technology.join(' /')}</li>
-    </ul>
-    </p>
-    <button class="btn" onclick="showModal(${index})">See More</button>
-  </div>`,
-).join('');
+const  closeModals = (index) =>{
+  projectModal.classList.add('hidden');
+};
 
-closeModal.addEventListener('click', function() {
-  projectModal.classList.add ('hidden');
-});
+ 
 
-window.addEventListener('click', function(event) {
-  var modal = document.getElementById('myModal');
-  if (event.target == modal) {
-    projectModal.classList.add ('hidden');
-  }
-});
 
-// modal end
+// window.addEventListener('click', function(event) {
+//   var modal = document.getElementById('myModal');
+//   if (event.target == modal) {
+//     projectModal.classList.add ('hidden');
+//   }
+// });
+
 
 // contact form validation
 const contactForm = document.getElementById('form');
