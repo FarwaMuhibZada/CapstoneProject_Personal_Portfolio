@@ -59,7 +59,6 @@ aboutContent.innerHTML = `
 const projectContent = document.getElementById('project-content');
 const projectModal = document.getElementById('myModal');
 const modalContent = document.getElementById('modal-content');
-const closeModal = document.getElementById('close');
 
 // project Data
 const projects = [
