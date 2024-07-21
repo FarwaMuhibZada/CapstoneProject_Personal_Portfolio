@@ -147,6 +147,10 @@ const projects = [
 
 ];
 
+const closeModals = () => {
+  projectModal.classList.add('hidden');
+};
+
 const showModal = (index) => {
   const project = projects[index];
   modalContent.innerHTML = `
@@ -166,10 +170,6 @@ const showModal = (index) => {
 
   // Attach event listener to close button inside modal
   document.getElementById('close').addEventListener('click', closeModals);
-};
-
-const closeModals = () => {
-  projectModal.classList.add('hidden');
 };
 
 projectContent.innerHTML = projects.map((project, index) => `
