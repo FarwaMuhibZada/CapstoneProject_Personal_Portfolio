@@ -107,7 +107,7 @@ i {
 }
 
 section {
-  padding: 0px 10% 50px;
+  padding: 0 10% 50px 10%;
 }
 
 .home {
@@ -120,7 +120,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  border-radius: 0px 0px 70px 70px;
+  border-radius: 0 0 70px 70px;
 }
 
 .one {
@@ -214,9 +214,8 @@ section {
 .about-img img {
   width: 440px;
   height: 296px;
-  width: 100%;
   border-radius: 5px;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .about-text h2 {
@@ -250,7 +249,7 @@ section {
 
 .project {
   padding: 20px 50px;
-  background:rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   margin: 70px 20px;
   border-radius: 40px 70px 40px 70px;
 }
@@ -316,7 +315,7 @@ section {
 }
 
 .lang-item {
-  border:2px solid #00a6ff;
+  border: 2px solid #00a6ff;
   padding: 5px 10px;
   border-radius: 30px;
 }
@@ -334,7 +333,7 @@ section {
 }
 
 /* Modal Content */
-#modal-content{
+#modal-content {
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -466,15 +465,14 @@ section {
   margin-bottom: 12px;
 }
 
+.list li a:hover {
+  color: #fff;
+}
+
 .list li a {
   display: block;
   color: #ccc;
   font-size: 14px;
-  transition: all 0.45 ease;
-}
-
-.list li a:hover {
-  color: #fff;
 }
 
 .contact-icons a img {
@@ -526,7 +524,6 @@ form textarea {
   background: #85b4ff;
   color: #fff;
   width: 160px;
-  transition: all 0.45 ease;
 }
 
 .contact-form .submit:hover {

@@ -169,7 +169,7 @@ projectContent.innerHTML += projects.map(
 const showModal = (index) => {
   const project = projects[index];
   modalContent.innerHTML = `
-   <button id="close" onclick="closeModals(${index})">&times;</button>
+   <button id="close" onclick="closeModals()">&times;</button>
     <div class="modal-header">
       <h2>${project.title}</h2>
     </div>
@@ -184,7 +184,7 @@ const showModal = (index) => {
   projectModal.classList.remove('hidden');
 };
 
-const closeModals = (index) => {
+const closeModals = () => {
   projectModal.classList.add('hidden');
 };
 
