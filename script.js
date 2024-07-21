@@ -28,8 +28,8 @@ const skills = {
   tools: ['TimeManagment', 'github', 'git', 'CodeReviwer'],
   language: ['HTML', 'CSS', 'JavaScript'],
   certification: [
-    { name:'Responsive Web Design(HTML,CSS)', img: './asset/certificate_js.png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/responsive-web-design' },
-    { name:'Javascript Algorithm & DataStructure', img: './asset/Screenshot (807).png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/javascript-algorithms-and-data-structures-v8' },
+    { name: 'Responsive Web Design(HTML,CSS)', img: './asset/certificate_js.png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/responsive-web-design' },
+    { name: 'Javascript Algorithm & DataStructure', img: './asset/Screenshot (807).png', link: 'https://www.freecodecamp.org/certification/fawaMuhibzada/javascript-algorithms-and-data-structures-v8' },
   ],
 };
 
@@ -150,7 +150,7 @@ const projects = [
 ];
 
 projectContent.innerHTML += projects.map(
-    (project, index) => `
+  (project, index) => `
     <div class="box">
       <div class="s-img">
         <img  src="${project.img}">
@@ -164,7 +164,7 @@ projectContent.innerHTML += projects.map(
       </p>
       <button class="btn" onclick="showModal(${index})">See More</button>
     </div>`,
-  ).join('');
+).join('');
 
 const showModal = (index) => {
   const project = projects[index];
@@ -184,20 +184,9 @@ const showModal = (index) => {
   projectModal.classList.remove('hidden');
 };
 
-const  closeModals = (index) =>{
+const closeModals = (index) => {
   projectModal.classList.add('hidden');
 };
-
- 
-
-
-// window.addEventListener('click', function(event) {
-//   var modal = document.getElementById('myModal');
-//   if (event.target == modal) {
-//     projectModal.classList.add ('hidden');
-//   }
-// });
-
 
 // contact form validation
 const contactForm = document.getElementById('form');
@@ -212,7 +201,6 @@ contactForm.addEventListener('submit', (event) => {
     errorMsg.classList.add('hidden');
   }
 });
-
 const formFields = ['name', 'email', 'message'];
 
 formFields.forEach((feild) => {

@@ -2,15 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
 }
 
 body {
-  background:rgba(55, 61, 65, 1);
+  background: rgba(55, 61, 65, 1);
   color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -55,7 +55,6 @@ i {
 .nav-branding {
   color: #fff;
   letter-spacing: 1px;
-  font-family: 'Inter';
   font-size: 50px;
   font-weight: 700;
   line-height: 60.51px;
@@ -64,12 +63,10 @@ i {
 }
 
 .nav-link {
-  font-family: 'Inter';
   font-size: 32px;
   font-weight: 700;
   line-height: 38.73px;
   text-align: left;
-  
 }
 
 .nav-link:hover {
@@ -136,10 +133,8 @@ section {
   color: #fff;
   width: 165px;
   height: 70px;
-  font-family: 'Inter';
   font-size: 45px;
   margin-top: 50px;
-  
 }
 
 .two {
@@ -165,9 +160,6 @@ section {
 .media-text span {
   font-weight: 500;
   font-size: 45px;
-  font-family: 'Inter';
-
-
 }
 
 .home-text h3 {
@@ -207,8 +199,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 13rem;
-  background:rgba(0, 0, 0, 0.5);
-  ;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .about-img {
@@ -230,7 +221,6 @@ section {
 
 .about-text h2 {
   font-size: 64px;
-  font-family: 'Inria Serif';
   font-weight: 70;
 }
 
@@ -244,14 +234,11 @@ section {
 
 .bout-text p {
   color: #ccc;
-  font-family: 'inter';
   line-height: 2.42rem;
   margin-bottom: 47px;
   font-size: 32px;
   font-weight: 700;
 }
-
-
 
 .s-img img {
   width: 300px;
