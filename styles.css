@@ -408,6 +408,12 @@ section {
   border-radius: 4px;
 }
 
+.list li a {
+  display: block;
+  color: #ccc;
+  font-size: 14px;
+}
+
 .modal-footer a:hover {
   background-color: #0056b3;
 }
@@ -463,12 +469,6 @@ section {
 
 .list li {
   margin-bottom: 12px;
-}
-
-.list li a {
-  display: block;
-  color: #ccc;
-  font-size: 14px;
 }
 
 .list li a:hover {
