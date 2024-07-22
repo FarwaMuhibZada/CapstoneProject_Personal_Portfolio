@@ -28,7 +28,7 @@ a {
 }
 
 span {
-  color: #55A5D7;
+  color: #55a5d7;
 }
 
 li {
@@ -155,7 +155,7 @@ section {
   font-size: 45px;
   margin-top: 89px;
   margin-bottom: 35px;
-  color: #55A5D7;
+  color: #55a5d7;
 }
 
 .home-text h3 {
@@ -238,7 +238,7 @@ section {
 
 .skill-text {
   font-size: 1.875rem;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 .proj-img img {
@@ -257,7 +257,7 @@ section {
 
 .proj-img {
   width: 370px;
-  border: 20px solid #55A5D7;
+  border: 20px solid #55a5d7;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,7 +389,7 @@ section {
   height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
-  border: 10px solid #55A5D7;
+  border: 10px solid #55a5d7;
 }
 
 .modal-body h3 {
@@ -448,8 +448,8 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.2rem;
-  border-radius: 70px 70px 0px 0px;
-  margin: 70px 20 0;
+  border-radius: 70px 70px 0 0;
+  margin: 70px 20px 0;
 }
 
 .contact-text h4 {
@@ -465,7 +465,7 @@ section {
   margin-bottom: 60px;
 }
 
-.contact-space{
+.contact-space {
   color: #ccc;
   font-size: 1.875rem;
   line-height: 2.269rem;

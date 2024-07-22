@@ -22,7 +22,7 @@ navlinkEls.forEach((navlinkEl) => {
 // About section content
 const aboutContent = document.getElementById('about');
 const skills = {
-  description: `Hello! I'm Farwa Muhibzada, a passionate web developer with a year of experience and a strong foundation in programming from my Computer Science studies. Currently, I'm enhancing my skills through a Full Stack Software Development program, focusing on HTML, CSS, and JavaScript to create efficient and user-friendly solutions.`,
+  description: 'Hello! I am Farwa Muhibzada, a passionate web developer with a year of experience and a strong foundation in programming from my Computer Science studies. Currently, I am enhancing my skills through a Full Stack Software Development program, focusing on HTML, CSS, and JavaScript to create efficient and user-friendly solutions.',
   tools: ['TimeManagement', 'GitHub', 'Git', 'CodeReviewer'],
   language: ['HTML', 'CSS', 'JavaScript'],
   certification: [
