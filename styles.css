@@ -125,7 +125,6 @@ section {
 
 .one {
   display: inline-block;
-  margin-right: 15px;
   padding: 8px 28px 12px 28px;
   font-weight: 700;
   border-radius: 10px 30px 10px 20px;
@@ -133,20 +132,13 @@ section {
   color: #fff;
   width: 165px;
   height: 70px;
-  font-size: 45px;
-  margin-top: 50px;
-}
-
-.two {
-  display: inline-block;
-  color: #ccc;
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 2.8125rem;
+  margin-top: 270px;
 }
 
 .text-name {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 70px;
+  margin-left: 10px;
 }
 
 .home-text p {
@@ -154,12 +146,13 @@ section {
   font-size: 35px;
   line-height: 42.36px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .media-text span {
   font-weight: 500;
   font-size: 45px;
+  margin-top: 85px;
 }
 
 .home-text h3 {
@@ -476,13 +469,16 @@ section {
   color: #fff;
 }
 
+.contact-icons {
+  margin-top: 35px;
+}
+
 .contact-icons a img {
   height: 50px;
   width: 50px;
   display: inline-block;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
   margin-right: 50px;
   transition: all 0.45s ease;
 }
