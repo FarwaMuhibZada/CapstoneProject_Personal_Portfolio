@@ -22,9 +22,7 @@ navlinkEls.forEach((navlinkEl) => {
 // About section content
 const aboutContent = document.getElementById('about');
 const skills = {
-  description: `Hello! I'm Farwa Muhibzada, a passionate web developer with a year of hands-on experience in the field.
-  My journey into web development began during my studies in Computer Science, where I completed two years of coursework that laid a strong foundation in programming and problem-solving. Currently, I am dedicated to advancing my skills further through a rigorous Full Stack Software Development program at Kickstart to Software Development. This intensive training has equipped me with in-depth knowledge of front-end and technologies, including HTML, CSS, JavaScript. 
-  I thrive on challenges and enjoy turning complex ideas into streamlined solutions that enhance user experience and efficiency.`,
+  description: `Hello! I'm Farwa Muhibzada, a passionate web developer with a year of experience and a strong foundation in programming from my Computer Science studies. Currently, I'm enhancing my skills through a Full Stack Software Development program, focusing on HTML, CSS, and JavaScript to create efficient and user-friendly solutions.`,
   tools: ['TimeManagement', 'GitHub', 'Git', 'CodeReviewer'],
   language: ['HTML', 'CSS', 'JavaScript'],
   certification: [
@@ -36,12 +34,12 @@ const skills = {
 aboutContent.innerHTML = `
   <div class="about-text">
     <h2>About <span>Me</span></h2>
-    <h4>Web Developer</h4>
-    <p>${skills.description}</p>
+    <h4>Web Develo<span>pe</span>r</h4>
+    <p id="mypara">${skills.description}</p>
     <br>
     <ul>
-      <li><span>Skills: </span>${skills.tools.join(', ')}</li>
-      <li><span>Languages: </span>${skills.language.join(', ')}</li>
+      <li class="skill-text"><span >Skills: </span>${skills.tools.join(', ')}</li>
+      <li class="skill-text"><span>Languages: </span>${skills.language.join(', ')}</li>
     </ul>
   </div>
   <div class="about-img">
@@ -92,7 +90,7 @@ const projects = [
     sourceLink: 'https://github.com/FarwaMuhibZada/Cash_Register_App',
   },
   {
-    title: 'CashRegisterAppr',
+    title: 'Palindrome Checker',
     shortDes: 'Palindrome Checker App Check if a word or phrase can be read the same way forwards and backwards.',
     longDes: `
   This Palindrome Checker app verifies if a sentence reads the same forwards and backwards,
@@ -112,7 +110,7 @@ const projects = [
     Search: Enter a Pokémon name or ID to retrieve detailed information.
     Display: Show Pokémon name, ID, weight, height, types, and stats (HP, Attack, Defense, Special Attack, Special Defense, Speed).
     `,
-    img: './asset/pakindrom.png',
+    img: './asset/pokimon.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://farwamuhibzada.github.io/Pokemon-Search-App/',
     sourceLink: 'https://github.com/FarwaMuhibZada/Pokemon-Search-App',
@@ -174,7 +172,7 @@ const showModal = (index) => {
 
 projectContent.innerHTML = projects.map((project, index) => `
   <div class="box">
-    <div class="s-img">
+    <div class="proj-img">
       <img src="${project.img}">
     </div>
     <h3>${project.title}</h3>
