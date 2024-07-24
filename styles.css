@@ -245,6 +245,9 @@ section {
   margin: 0 auto;
   background-size: cover;
   height: 170px;
+  border: 20px solid #55a5d7;
+  border-radius: 10px 20px 10px 20px;
+
 }
 
 .project {
@@ -256,12 +259,10 @@ section {
 
 .proj-img {
   width: 370px;
-  border: 20px solid #55a5d7;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 40px auto;
-  border-radius: 10px 20px 10px 20px;
 }
 
 .main-text {

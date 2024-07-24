@@ -98,7 +98,7 @@ const projects = [
   clear outputs indicating whether the input is a palindrome or not.
   The app features a straightforward and intuitive user interface.
     `,
-    img: './asset/pakindrom.png',
+    img: './asset/pal.PNG',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: ' https://farwamuhibzada.github.io/Palindrome_Checker/',
     sourceLink: 'https://github.com/FarwaMuhibZada/Palindrome_Checker/',
