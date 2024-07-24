@@ -317,7 +317,7 @@ section {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .lang-item {
@@ -414,7 +414,7 @@ section {
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
-  background-color: #55a5d7B2;
+  background-color: #55a5d7b2;
 }
 
 .list li a {
