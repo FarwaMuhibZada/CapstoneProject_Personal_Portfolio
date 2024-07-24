@@ -25,17 +25,7 @@ life demo link [( https://farwamuhibzada.github.io/Personal_Portfolio/)]
 
 how it looks in desktop screen
 
-![first page](./img/desktop2.PNG)
-
-![second page](./img/dwsktop2.PNG)
-
-how it looks in ipad screen
-
-![second page](./img/ipad.PNG)
-
-how it looks in smartphone screen
-
-![second page](./img/mobile.PNG)
+![first page](./asset/Capture.PNG)
 
 
 ## Technologies Used 🛠️
@@ -93,13 +83,18 @@ cd>CapstoneProject_Personal_Portfolio
 ## FarwaMuhibzada 👩‍💻
 
 
-- LinkedIn: [(https://www.linkedin.com/in/farwa-muhibzada/)]
+- LinkedIn: [(https://www.linkedin.com/in/farwamohibzada/)]
 - Email: [(farwafarid2017@gmail.com)]
 
 
 ## Contributing 🤝
-## Design Idea By : Parwana Sanaie👩‍💻
-- LinkedIn: [(https://www.linkedin.com/in/farwamohibzada/)]
-- Email: [(farwafarid2017@gmail.com)]
+## Design Idea By UX/UI Team:
+# Parwana Hassani👩‍💻
+- LinkedIn: [(https://www.linkedin.com/in/parwana-hassani-2b725b31b/?trk=opento_sprofile_goalscard)]
+# Zahra SADAT👩‍💻
+- LinkedIn: [(https://www.linkedin.com/in/zahra-sadat-42340a310)]
+# Muzhgan Alizada👩‍💻
+- LinkedIn: [(https://www.linkedin.com/in/muzhgan-alizada-314a72310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)]
+
 
 For contribution you can create a pull request and mention me there.Thank you.
