@@ -21,11 +21,14 @@ Contact Form: A contact form allows visitors to send messages directly from the 
 >
 ## Demo 📸
 
-life demo link [( https://farwamuhibzada.github.io/Personal_Portfolio/)]
+life demo link [(https://farwamuhibzada.github.io/CapstoneProject_Personal_Portfolio/)]
 
 how it looks in desktop screen
 
 ![first page](./asset/Capture.PNG)
+
+## Figma Design Link 🎨
+https://www.figma.com/design/BFSpaGK7qdPXPwpVFzVANk/Ptotofolio?node-id=0-1&t=qLuEfa9gaEB8Veiw-0
 
 
 ## Technologies Used 🛠️
