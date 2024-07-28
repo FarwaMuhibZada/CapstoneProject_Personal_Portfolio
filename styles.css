@@ -218,6 +218,7 @@ section {
 .about-text h2 {
   font-size: 4rem;
   font-weight: 70;
+  font-family: 'Inria Serif', serif;
 }
 
 .about-text h4 {
@@ -226,6 +227,7 @@ section {
   color: #fff;
   line-height: 1.7;
   margin: 20px 0 32px 0;
+  font-family: 'Inria Serif', serif;
 }
 
 #mypara {
@@ -610,8 +612,11 @@ form textarea {
   }
 
   .nav-tem {
-    padding: 26px 0 26px 0;
+    margin: 0;
+    border-bottom: 1px solid #fff;
+    padding: 25px 211px 25px 90px;
   }
+
 
   .bar {
     display: block;
@@ -649,6 +654,7 @@ form textarea {
 
   .home {
     border-radius: 0;
+    height: auto;
   }
 
   .about-img img {
@@ -794,7 +800,7 @@ form textarea {
   .nav-tem {
     margin: 0;
     border-bottom: 1px solid #fff;
-    padding: 25px 211px 25px  90px;
+    padding: 25px 211px 25px 90px;
   }
 
   .one {
