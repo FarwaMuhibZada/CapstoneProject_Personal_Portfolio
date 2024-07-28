@@ -92,11 +92,11 @@ cd>CapstoneProject_Personal_Portfolio
 
 ## Contributing 🤝
 ## Design Idea By UX/UI Team:
-# Parwana Hassani👩‍💻
+### Parwana Hassani👩‍💻
 - LinkedIn: [(https://www.linkedin.com/in/parwana-hassani-2b725b31b/?trk=opento_sprofile_goalscard)]
-# Zahra SADAT👩‍💻
+### Zahra SADAT👩‍💻
 - LinkedIn: [(https://www.linkedin.com/in/zahra-sadat-42340a310)]
-# Muzhgan Alizada👩‍💻
+### Muzhgan Alizada👩‍💻
 - LinkedIn: [(https://www.linkedin.com/in/muzhgan-alizada-314a72310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)]
 
 
