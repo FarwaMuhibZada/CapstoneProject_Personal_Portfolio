@@ -595,6 +595,7 @@ form textarea {
     font-size: 28px;
     font-weight: 700;
     padding: 20px 150px 20px 18px;
+    margin-left: 0;
   }
 
   .nav-link {
@@ -704,12 +705,6 @@ form textarea {
     background-color: #373d41;
     font-size: 32px;
     font-weight: 700;
-  }
-
-  .nav-branding {
-    margin-left: 0;
-    font-size: 28px;
-    padding: 5px 150px 5px 18px;
   }
 
   .nav-menu.active {
@@ -839,7 +834,7 @@ form textarea {
     margin-bottom: 149px;
   }
 
-  .media-text  {
+  .media-text {
     font-weight: 500;
     font-size: 30px;
     margin-bottom: 35px;
