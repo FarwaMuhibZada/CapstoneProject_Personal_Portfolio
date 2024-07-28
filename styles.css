@@ -18,7 +18,7 @@ header {
   width: 100%;
   top: 0;
   right: 0;
-  background: #000000;
+  background: #000;
   z-index: 2000;
 }
 
@@ -640,7 +640,7 @@ form textarea {
     border-top: none;
     background-color: #373d41;
     font-size: 32px;
-    font-weight: 700px !important;
+    font-weight: 700;
   }
 
   .nav-tem {
@@ -747,7 +747,7 @@ form textarea {
     border-top: none;
     background-color: #373d41;
     font-size: 32px;
-    font-weight: 700px;
+    font-weight: 700;
   }
 
   .nav-tem {
