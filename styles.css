@@ -56,14 +56,14 @@ li {
   letter-spacing: 1px;
   font-size: 50px;
   font-weight: 700;
-  padding:  15px 333px 14px 90px;
+  padding: 15px 333px 14px 90px;
 }
 
 .nav-link {
   font-size: 32px;
   font-weight: 700;
   text-align: left;
-  margin-right:50px;
+  margin-right: 50px;
 }
 
 .nav-link:hover {
@@ -585,7 +585,7 @@ form textarea {
 @media (max-width: 768px) {
   .humburger {
     display: block;
-    padding: 21px 25px 20px 0px;
+    padding: 21px 25px 20px 0;
     margin: 0;
   }
 
@@ -594,20 +594,20 @@ form textarea {
     letter-spacing: 1px;
     font-size: 28px;
     font-weight: 700;
-    padding:  20px 150px 20px 18px;
+    padding: 20px 150px 20px 18px;
   }
-  
+
   .nav-link {
     font-size: 32px;
     font-weight: 700;
     text-align: left;
-    margin-right:50px;
+    margin-right: 50px;
   }
-  
+
   .nav-link:hover {
     color: #85b4ff;
   }
-  
+
   .nav-tem {
     padding: 26px 0 26px 0;
   }
@@ -646,17 +646,15 @@ form textarea {
     margin-bottom: 51.72px;
   }
 
-
   .home {
     border-radius: 0;
   }
-  
- 
+
   .about-img img {
     width: 300px;
     height: 223px;
   }
-  
+
   .home-text h3 {
     color: #fff;
     font-size: 26px;
@@ -678,7 +676,6 @@ form textarea {
     font-size: 30px;
     margin-bottom: 35px;
   }
-
 
   .proj-img img {
     width: 100%;
@@ -707,12 +704,6 @@ form textarea {
     background-color: #373d41;
     font-size: 32px;
     font-weight: 700;
-  }
-
-  .nav-tem {
-    padding: 25px 211px 25px  90px;
-    margin: 0;
-    border-bottom: 1px solid #fff;
   }
 
   .nav-branding {
@@ -806,9 +797,9 @@ form textarea {
   }
 
   .nav-tem {
-    padding: 25px 211px 25px  90px;
     margin: 0;
     border-bottom: 1px solid #fff;
+    padding: 25px 211px 25px  90px;
   }
 
   .one {
