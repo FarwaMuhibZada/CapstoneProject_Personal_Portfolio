@@ -621,7 +621,6 @@ form textarea {
     padding: 25px 211px 25px 90px;
   }
 
-
   .bar {
     display: block;
     width: 30px;
@@ -972,7 +971,5 @@ form textarea {
     text-decoration: none;
     border-radius: 10px;
     font-size: 20px;
-  }
-
-  
+  } 
 }
