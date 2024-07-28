@@ -18,12 +18,12 @@ header {
   width: 100%;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 1);
+  background: #000000;
   z-index: 2000;
 }
 
 a {
-  color: #ccc;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -605,6 +605,10 @@ form textarea {
     font-size: 32px;
   }
 
+  .home {
+    border-radius: 0;
+  }
+
   .about-img img {
     width: 300px;
     height: 223px;
@@ -629,21 +633,26 @@ form textarea {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #2a2a2a;
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    border-bottom: none;
+    border: 1px solid #fff;
+    border-top: none;
+    background-color: #373d41;
+    font-size: 32px;
+    font-weight: 700px !important;
+  }
+
+  .nav-tem {
+    padding: 25px 211px 25px  90px;
+    margin: 0;
+    border-bottom: 1px solid #fff;
   }
 
   .nav-branding {
     margin-left: 0;
     font-size: 28px;
     padding: 5px 150px 5px 18px;
-  }
-
-  .nav-tem {
-    margin: 16px 0;
   }
 
   .nav-menu.active {
@@ -735,10 +744,15 @@ form textarea {
 @media (max-width: 393px) {
   .nav-menu {
     border: 1px solid #fff;
+    border-top: none;
+    background-color: #373d41;
+    font-size: 32px;
+    font-weight: 700px;
   }
 
   .nav-tem {
-    padding: 25px 50px;
+    padding: 25px 211px 25px  90px;
+    margin: 0;
     border-bottom: 1px solid #fff;
   }
 
