@@ -56,16 +56,14 @@ li {
   letter-spacing: 1px;
   font-size: 50px;
   font-weight: 700;
-  line-height: 60.51px;
-  margin-left: 110px;
-  padding: 15px;
+  padding:  15px 333px 14px 90px;
 }
 
 .nav-link {
   font-size: 32px;
   font-weight: 700;
-  line-height: 38.73px;
   text-align: left;
+  margin-right:50px;
 }
 
 .nav-link:hover {
@@ -73,7 +71,7 @@ li {
 }
 
 .nav-tem {
-  padding: 20px 10px;
+  padding: 26px 0 26px 0;
 }
 
 .navList {
@@ -132,8 +130,11 @@ section {
   width: 165px;
   height: 70px;
   font-size: 2.8125rem;
-  margin-top: 270px;
   margin-bottom: 70px;
+}
+
+.home-text {
+  margin-top: 270px;
 }
 
 .text-name {
@@ -146,7 +147,8 @@ section {
   font-size: 35px;
   line-height: 42.36px;
   font-weight: 500;
-  margin-top: 40px;
+  margin-bottom: 89px;
+  text-align: justify;
 }
 
 .media-text span {
@@ -161,7 +163,7 @@ section {
   color: #fff;
   font-size: 45px;
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 0 0 40px;
 }
 
 .button {
@@ -496,7 +498,13 @@ section {
   align-items: center;
   justify-content: center;
   margin-right: 50px;
+  margin-bottom: 50px;
   transition: all 0.45s ease;
+}
+
+#email {
+  width: 60px;
+  height: 40px;
 }
 
 .contact-icons i:hover {
@@ -578,6 +586,37 @@ form textarea {
 @media (max-width: 768px) {
   .humburger {
     display: block;
+    padding: 21px 25px 20px 0px;
+    margin: 0;
+  }
+
+  .nav-branding {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 700;
+    padding:  20px 150px 20px 18px;
+  }
+  
+  .nav-link {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    margin-right:50px;
+  }
+  
+  .nav-link:hover {
+    color: #85b4ff;
+  }
+  
+  .nav-tem {
+    padding: 26px 0 26px 0;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
   }
 
   .humburger.active .bar:nth-child(2) {
