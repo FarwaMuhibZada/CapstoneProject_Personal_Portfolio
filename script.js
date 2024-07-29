@@ -65,10 +65,7 @@ const projects = [
     longDes: `
     This application converts any number to a Roman numeral, fulfilling all requirements for a FreeCodeCamp project:
     Includes an input element with id "number" and a button with id "convert-btn".
-    Displays results in a div with id "output".
-    Alerts users with "Please enter a valid number" if the input is empty.
-    Warns against negative numbers and numbers 4000 and above with specific messages in the output div.
-    `,
+    Displays results in a div with id "output".`,
     img: './asset/romanconverter.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://farwamuhibzada.github.io/Roman-Numerals-Converter/',
@@ -80,10 +77,7 @@ const projects = [
     longDes: `
     This project is a cash register application that calculates and displays change due to a customer based on the price of an item,
     the cash provided, and the cash in the register drawer.
-    It provides different messages depending on the scenario,
-    such as when exact change is provided, when the cash provided is insufficient,
-    or when the register drawer cannot provide exact change.
-    `,
+    It provides different messages depending on the scenario.`,
     img: './asset/cashregister.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://farwamuhibzada.github.io/Cash_Register_App/',
@@ -95,9 +89,7 @@ const projects = [
     longDes: `
   This Palindrome Checker app verifies if a sentence reads the same forwards and backwards,
   considering case, punctuation, and spacing. It alerts users with an empty input and provides
-  clear outputs indicating whether the input is a palindrome or not.
-  The app features a straightforward and intuitive user interface.
-    `,
+  clear outputs indicating whether the input is a palindrome or not.`,
     img: './asset/pal.PNG',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: ' https://farwamuhibzada.github.io/Palindrome_Checker/',
@@ -107,9 +99,7 @@ const projects = [
     title: 'PokemonSearchApp',
     shortDes: 'A web application for searching Pokémon details by name or ID using the PokéAPI',
     longDes: `A web application for searching Pokémon details by name or ID using the PokéAPI Proxy provided by freeCodeCamp.
-    Search: Enter a Pokémon name or ID to retrieve detailed information.
-    Display: Show Pokémon name, ID, weight, height, types, and stats (HP, Attack, Defense, Special Attack, Special Defense, Speed).
-    `,
+    Search: Enter a Pokémon name or ID to retrieve detailed information.`,
     img: './asset/pokimon.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://farwamuhibzada.github.io/Pokemon-Search-App/',
@@ -134,9 +124,7 @@ const projects = [
     shortDes: 'The tribute page structure requires main section to all encompass content. ',
     longDes: `
     The tribute page structure requires a main section labeled "main" to encompass all content.
-    It includes a title section ("title") with descriptive text about the subject. Within an element identified as "img-div" (either figure or div):
-    An image ("image") should be centered and resize responsively.
-    An "img-caption" element should provide textual context for the image.`,
+    It includes a title section ("title") with descriptive text about the subject.`,
     img: './asset/tribute_page.png',
     technology: ['HTML', 'CSS'],
     liveLink: ': https://farwamuhibzada.github.io/tribute-page/',
@@ -158,7 +146,9 @@ const showModal = (index) => {
     </div>
     <div class="modal-body">
       <img src="${project.img}" alt="Image">
+      <div class="modal-body-p">
       <p>${project.longDes}</p>
+      </div>
     </div>
     <div class="modal-footer">
       <a href="${project.sourceLink}">Source Code</a>

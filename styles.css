@@ -343,10 +343,12 @@ section {
 .modal {
   display: block;
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
   width: 100%;
   overflow: auto;
+  z-index: 1000;
 }
 
 /* Modal Content */
@@ -356,21 +358,24 @@ section {
   border: 2px solid #55a5d7;
   border-radius: 20px;
   width: 80%;
-  max-width: 600px;
+  max-width: 1000px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  background-color: #2a2a2a;
+  background-color: #373d41;
 }
 
 /* Close Button */
 #close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   cursor: pointer;
-  border: none;
-  background-color: #2a2a2a;
+  padding: 0 5px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  background-color:#373d41;
+  margin: 20px 30px 0 0;
 }
 
 #close:hover,
@@ -382,7 +387,7 @@ section {
 /* Modal Header */
 .modal-header {
   text-align: left;
-  margin-bottom: 20px;
+  margin: 20px 0px 40px 50px;
 }
 
 .modal-header h2 {
@@ -392,22 +397,25 @@ section {
 /* Modal Body */
 .modal-body {
   text-align: center;
+  padding: 0;
 }
 
 .modal-body img {
-  max-width: 50%;
-  height: auto;
+  width: 80%;
+  height: 300px;
   border-radius: 4px;
-  margin-bottom: 10px;
-  border: 10px solid #55a5d7;
+  margin-bottom: 40px;
+  border: 20px solid #55a5d7;
+ border-radius: 20px 30px 20px 30px;
 }
 
 .modal-body h3 {
   margin: 10px 0;
 }
 
-.modal-body p {
-  font-size: 14px;
+.modal-body-p {
+  font-size: 24px;
+  margin: 0 50px 30px;
   line-height: 1.5;
 }
 
@@ -415,12 +423,16 @@ section {
 .modal-footer {
   text-align: center;
   margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .modal-footer a {
   display: inline-block;
-  padding: 4px 24px;
-  margin-right: 30px;
+  padding: 5px 20px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
@@ -817,6 +829,54 @@ form textarea {
     background-color: #373d41;
     padding: 0 22px 20px 21px;
   }
+
+  .modal-header {
+    text-align: left;
+    margin: 35px 0px 30px 20px;
+  }
+
+  .modal {
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  #close {
+    font-size: 22px;
+    border: 2px solid #fff;
+    margin: 10px 10px 0 0;
+  }
+
+  .modal-body img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+
+  .modal-body-p {
+    font-size: 20px;
+    margin: 0  5px 10px 5px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .modal-footer {
+    flex-wrap: wrap;
+  }
+
+  .modal-footer a {
+    margin-bottom: 10;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  #modal-content {
+    padding-top: 0;
+    padding-bottom: 0 5px;
+  }
+
 }
 
 @media (max-width: 393px) {
