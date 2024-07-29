@@ -184,7 +184,6 @@ projectContent.innerHTML = projects.map((project, index) => `
     <button class="btn" data-index="${index}">See More</button>
   </div>
   </div>`).join('');
- 
 
 // Attach event listeners to dynamically created buttons
 document.querySelectorAll('.btn').forEach((button) => {
