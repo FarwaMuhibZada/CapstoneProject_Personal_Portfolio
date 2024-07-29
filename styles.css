@@ -247,7 +247,7 @@ section {
   width: 100%;
   margin: 0 auto;
   background-size: cover;
-  height: 170px;
+  height: 160px;
   border: 20px solid #55a5d7;
   border-radius: 10px 20px 10px 20px;
 }
@@ -264,7 +264,13 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.proj-info {
+  margin: 30px;
+  color: white;
 }
 
 .main-text {
@@ -291,7 +297,8 @@ section {
 }
 
 .box {
-  background: hsl(205, 16.9%, 27.84%);
+  background: hsl(203.08,61.9%,58.82%);
+  opacity: 0.5;
   padding: 40px 15px 50px;
   border-radius: 12px;
   transition: all 0.45s ease;
@@ -305,7 +312,7 @@ section {
 }
 
 .box p {
-  color: #ccc;
+  color: #fff;
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -725,18 +732,8 @@ form textarea {
     border-radius: 0;
     padding: 30px 60px;
     display: flex;
-    flex-direction: column;
-  }
-
-  .proj-img {
-    width: 280px;
-    border-radius: 12px;
-  }
-
-  .project {
-    padding: 0;
-    border-radius: 0;
     background-color: #373d41;
+    flex-direction: column;
   }
 
   .about-img {
@@ -791,6 +788,34 @@ form textarea {
   #emails {
     width: 40px;
     height: 20px;
+  }
+  
+  .project {
+    border-radius: 0;
+    padding: 0;
+    background-color: #373d41;
+    margin: 70px 0 70px 0;
+  }
+
+  .proj-img {
+    width: 340px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .box {
+    padding: 20px 24px;
+    border-radius: 12px;
+    background-color: #55A5D7;
+    opacity: 60%;
+  }
+
+  .project-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    background-color: #373d41;
+    padding: 0 22px 20px 21px;
   }
 }
 

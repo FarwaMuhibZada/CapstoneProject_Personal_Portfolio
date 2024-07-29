@@ -131,7 +131,7 @@ const projects = [
   },
   {
     title: 'tribute-page',
-    shortDes: 'The tribute page structure requires a main section labeled "main" to encompass all content. ',
+    shortDes: 'The tribute page structure requires main section to all encompass content. ',
     longDes: `
     The tribute page structure requires a main section labeled "main" to encompass all content.
     It includes a title section ("title") with descriptive text about the subject. Within an element identified as "img-div" (either figure or div):
@@ -175,13 +175,16 @@ projectContent.innerHTML = projects.map((project, index) => `
     <div class="proj-img">
       <img src="${project.img}">
     </div>
+    <div class="proj-info">
     <h3>${project.title}</h3>
     <p>${project.shortDes}</p>
     <ul class="langs">
       <li class="lang-item">${project.technology.join(' / ')}</li>
     </ul>
     <button class="btn" data-index="${index}">See More</button>
+  </div>
   </div>`).join('');
+ 
 
 // Attach event listeners to dynamically created buttons
 document.querySelectorAll('.btn').forEach((button) => {
