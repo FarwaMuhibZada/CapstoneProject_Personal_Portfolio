@@ -144,6 +144,9 @@ const showModal = (index) => {
     <div class="modal-header">
       <h2>${project.title}</h2>
     </div>
+        <ul class="langs" id="margin-ul">
+      <li class="lang-item">${project.technology.join(' / ')}</li>
+    </ul>
     <div class="modal-body">
       <img src="${project.img}" alt="Image">
       <div class="modal-body-p">

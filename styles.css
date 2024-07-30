@@ -326,14 +326,18 @@ section {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .lang-item {
   border: 2px solid #00a6ff;
   padding: 5px 10px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+#margin-ul {
+  margin-left: 45px;
 }
 
 /* modal design */
@@ -343,7 +347,7 @@ section {
   display: block;
   position: fixed;
   left: 50%;
-  top: 55%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   overflow: auto;
@@ -420,7 +424,6 @@ section {
 /* Modal Footer */
 .modal-footer {
   text-align: center;
-  margin-top: 40px;
   display: flex;
   justify-content: space-around;
 }
@@ -428,7 +431,7 @@ section {
 .modal-footer a {
   display: inline-block;
   padding: 5px 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 500;
   color: #fff;
@@ -468,7 +471,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   text-align: center;
-  gap: 2.2rem;
+  gap: 5rem;
   border-radius: 70px 70px 0 0;
   margin: 70px 20px 0;
 }
@@ -490,8 +493,11 @@ section {
   color: #ccc;
   font-size: 1.875rem;
   line-height: 2.269rem;
+ padding-right: 10px;
   margin-bottom: 128px;
   font-weight: 400;
+  margin-left: 20px;
+  
 }
 
 .list {
