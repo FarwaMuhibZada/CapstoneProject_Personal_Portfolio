@@ -357,7 +357,7 @@ section {
 /* Modal Content */
 #modal-content {
   margin: 10% auto;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid #55a5d7;
   border-radius: 20px;
   width: 80%;
@@ -1039,7 +1039,7 @@ form textarea {
   }
 
   .modal {
-    top: 55%;
+    top: 50%;
   }
 
   .modal-footer a {

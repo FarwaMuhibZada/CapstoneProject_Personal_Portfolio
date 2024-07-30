@@ -65,7 +65,7 @@ const projects = [
     longDes: `
     This application converts any number to a Roman numeral, fulfilling all requirements for a FreeCodeCamp project:
     Includes an input element with id "number" and a button with id "convert-btn".
-    Displays results in a div with id "output".`,
+    Displays results in a div.`,
     img: './asset/romanconverter.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://farwamuhibzada.github.io/Roman-Numerals-Converter/',
@@ -76,8 +76,7 @@ const projects = [
     shortDes: 'This application calculates and displays change due to a customer based on the price of an item ',
     longDes: `
     This project is a cash register application that calculates and displays change due to a customer based on the price of an item,
-    the cash provided, and the cash in the register drawer.
-    It provides different messages depending on the scenario.`,
+    the cash provided,It showes different messages depending on the scenario.`,
     img: './asset/cashregister.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://farwamuhibzada.github.io/Cash_Register_App/',
@@ -87,9 +86,8 @@ const projects = [
     title: 'Palindrome Checker',
     shortDes: 'Palindrome Checker App Check if a word or phrase can be read the same way forwards and backwards.',
     longDes: `
-  This Palindrome Checker app verifies if a sentence reads the same forwards and backwards,
-  considering case, punctuation, and spacing. It alerts users with an empty input and provides
-  clear outputs indicating whether the input is a palindrome or not.`,
+    This Palindrome Checker app verifies if a sentence reads the same forwards and backwards,
+    considering case, punctuation, and spacing. It alerts users with an empty input and provide a clear button.`,
     img: './asset/pal.PNG',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: ' https://farwamuhibzada.github.io/Palindrome_Checker/',
@@ -112,7 +110,6 @@ const projects = [
     longDes: `
    create a complete survey form using HTML and CSS
    applied some HTML form validation.
-   input reliable data from users.
    CSS style to make form more user friendly.`,
     img: './asset/form.png',
     technology: ['HTML', 'CSS'],
