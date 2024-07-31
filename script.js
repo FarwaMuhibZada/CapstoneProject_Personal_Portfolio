@@ -87,7 +87,7 @@ const projects = [
     shortDes: 'Palindrome Checker App Check if a word or phrase can be read the same way forwards and backwards.',
     longDes: `
     This Palindrome Checker app verifies if a sentence reads the same forwards and backwards,
-    considering case, punctuation, and spacing. It alerts users with an empty input and provide a clear button.`,
+    considering case, punctuation, and spacing. It alerts users with an empty input.`,
     img: './asset/pal.PNG',
     technology: ['HTML', 'CSS', 'Javascript'],
     liveLink: ' https://farwamuhibzada.github.io/Palindrome_Checker/',
