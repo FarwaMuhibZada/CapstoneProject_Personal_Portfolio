@@ -216,13 +216,13 @@ section {
 }
 
 .about-text h2 {
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 70;
   font-family: 'Inria Serif', serif;
 }
 
 .about-text h4 {
-  font-size: 2.25rem;
+  font-size: 32px;
   font-weight: 700;
   color: #fff;
   line-height: 1.7;
@@ -873,6 +873,28 @@ form textarea {
     padding-top: 0;
     padding-bottom: 5px;
   }
+
+  .about-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+  }
+  
+  .about-text h4 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #mypara {
+    color: #ccc;
+    line-height: 29.05px;
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  .skill-text {
+    font-size: 23px;
+  }
 }
 
 @media (max-width: 393px) {
@@ -953,16 +975,16 @@ form textarea {
 
   .about {
     border-radius: 0;
-    padding: 30px 60px;
+    padding: 30px 50px;
     background: #373d41;
   }
 
   .about-text h2 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   .about-text h4 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     margin: 24px 0 39px 0;
   }
@@ -970,12 +992,12 @@ form textarea {
   #mypara {
     color: #ccc;
     line-height: 29.05px;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 300;
   }
 
   .skill-text {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .project {
@@ -1039,15 +1061,27 @@ form textarea {
   }
 
   .modal {
-    top: 50%;
+    top: 55%;
   }
 
   .modal-footer a {
     padding: 3px 27px;
-    margin: 17px 0 15px;
+    margin: 10px 0 15px;
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
     font-size: 20px;
+  }
+
+  .modal-body img {
+    margin-bottom: 30px;
+    border-radius: 15px 20px 15px 20px;
+  }
+
+  .lang-item {
+    border: 2px solid #00a6ff;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
 }

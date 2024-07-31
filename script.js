@@ -64,7 +64,7 @@ const projects = [
     shortDes: 'An application convert any number in to roman number fulfilling all requirements of FreeCodeCamp',
     longDes: `
     This application converts any number to a Roman numeral, fulfilling all requirements for a FreeCodeCamp project:
-    Includes an input element with id "number" and a button with id "convert-btn".
+    Includes an input element and a button.
     Displays results in a div.`,
     img: './asset/romanconverter.png',
     technology: ['HTML', 'CSS', 'Javascript'],
