@@ -877,9 +877,8 @@ form textarea {
   .about-text h2 {
     font-size: 40px;
     font-weight: 700;
-
   }
-  
+
   .about-text h4 {
     font-size: 30px;
     font-weight: 700;
@@ -958,6 +957,11 @@ form textarea {
   .about-img img {
     width: 331px;
     height: 223px;
+  }
+
+  .modal-body img {
+    margin-bottom: 30px;
+    border-radius: 15px 20px 15px 20px;
   }
 
   .proj-img img {
@@ -1071,11 +1075,6 @@ form textarea {
     text-decoration: none;
     border-radius: 10px;
     font-size: 20px;
-  }
-
-  .modal-body img {
-    margin-bottom: 30px;
-    border-radius: 15px 20px 15px 20px;
   }
 
   .lang-item {
