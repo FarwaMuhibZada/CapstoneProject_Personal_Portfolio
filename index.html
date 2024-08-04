@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- box icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header Section -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-branding">
+        <p>Develo<span>pe</span>r..</p>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-tem"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-tem"><a href="#about" class="nav-link">AboutMe</a></li>
+        <li class="nav-tem"><a href="#myProject" class="nav-link">MyProject</a></li>
+        <li class="nav-tem" id="noBr"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="humburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+    </nav>
+  </header>
+  <!-- home section -->
+  <section id="home" class="home">
+    <div class="home-text">
+      <span class="one">Hello</span>
+
+      <div class="text-name">
+        <h3>I'm F<span>a</span>r<span>w</span>a Muhibzada<br>Glad to see you!</h3>
+
+      </div>
+      <div class="home-text-p">
+        web developer with one year of experience
+        in creating responsive websites
+        I enjoy tackling challenges</p>
+      </div>
+      <p class="media-text"><span>Let’s Connect!</span></p>
+      <div class="contact-icons">
+        <a href="https://wa.me/0782907617"><img src="./asset/Vector (1).png" alt="whatsapp"></a>
+        <a href="https://github.com/FarwaMuhibZada/"><img src="./asset/git.png" alt=""></a>
+        <a href="mailto:farwafarid@gmail.com"><img src="./asset/mail.png" alt="" id="emails"></a>
+        <a href="https://www.linkedin.com/in/farwamohibzada/"><img src="./asset/link.png" alt=""></a>
+      </div>
+  </section>
+  <!-- about section -->
+  <section id="about" class="about">
+
+  </section>
+  <!-- myProject sections -->
+  <section class="project" id="myProject">
+    <div class="main-text">
+      <h2><span>My</span>Project</h2>
+    </div>
+    <div id="project-content" class="project-content">
+
+    </div>
+    <!-- modal  -->
+    <div id="myModal" class=" modal hidden">
+      <div id="modal-content">
+      </div>
+    </div>
+  </section>
+  <!-- contact us section  -->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact Me!</h2>
+      <p class="contact-space">
+        If you have any project in your mind I 'm a Web Developer - create bold and brave interface design for
+        companies all cross the world!<br>
+        Let’s Connect!
+      </p>
+      <div class="contact-icons">
+        <a href="https://wa.me/0782907617"><img src="./asset/Vector (1).png" alt="whatsapp"></a>
+        <a href="https://github.com/FarwaMuhibZada/"><img src="./asset/git.png" alt=""></a>
+        <a href="mailto:farwafarid@gmail.com"><img src="./asset/mail.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/farwamohibzada/"><img src="./asset/link.png" alt=""></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mrbzboap" id="form" method="POST">
+        <input type="text" placeholder="Name" id="name" name="name" required>
+        <input type="email" placeholder="E-mail" id="email" name="email" required>
+        <textarea cols="35" rows="10" placeholder="How Can I Help You " id="message" name="message" required></textarea>
+        <p id="error-msg" class="hidden">Emails Must Be In LowerCase!</p>
+        <input type="submit" value="Get in touch" class="submit">
+      </form>
+    </div>
+  </section>
+
+  <!-- end section -->
+  <section class="end">
+    <div class="last-text">
+      <p>design by FarwaMuhibzada</p>
+    </div>
+    <div class="top">
+      <a href="#home"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
